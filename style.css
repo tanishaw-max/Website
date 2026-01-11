@@ -1,0 +1,71 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  width: auto;
+  height: 100vh;
+  margin: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  font-family: Playfair DisplaY;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.navbar ul li {
+  padding-left: 5rem;
+}
+.loginsignupBtn {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 10px; */
+}
+.loginsignupBtn a {
+  text-decoration: none;
+  color: white;
+}
+.loginsignupBtn button {
+  padding: 13px;
+  background: #f9c06a;
+  color: black;
+  border-radius: 20px;
+  margin-left: 40px;
+  border: #f9c06a solid 1px;
+}
+.bottom-top button {
+  padding: 13px;
+  background: #f9c06a;
+  color: black;
+  border-radius: 20px;
+  border: #f9c06a solid 1px;
+  font-weight: bolder;
+}
+.middle {
+  color: white;
+  margin: 50px;
+  margin-left: 5px;
+  font-size: 25px;
+}
+.middle-top {
+  padding: 15px;
+}
+.bottom {
+  /* margin: 50px; */
+  color: white;
+  margin-left: 5px;
+  font-size: 25px;
+}
