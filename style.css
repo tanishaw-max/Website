@@ -196,7 +196,7 @@ gap:50px
 }
 
 .discover-text p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
   color: #707070;
   margin-bottom: 30px;
@@ -254,7 +254,7 @@ gap:50px
 
 }
 .menu-text p{
-  color:black;
+  color:#707070;
   font-size: 17px;
   line-height: 1.2;
   margin-left: 70px;
@@ -267,3 +267,64 @@ gap:50px
 
   padding: 70px;
 }
+
+
+.different{
+  background-color: #fff;
+
+
+ 
+}
+.different-container{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.different-images{
+  margin-left:1000px;
+}
+.different-text{
+  max-width: 1400px;
+  margin: 0 auto;
+  
+
+}
+.different-text h1{
+  color:#603809;
+  font-size: 40px;
+ 
+}
+.different-text h3{
+  color:#603809;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.different-text p{
+  color:#707070;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.different-image{
+  max-width: 1400px;
+  margin-left: 200px;
+  align-items: center;
+
+  padding: 70px;
+}
+.button{
+ padding: 13px 20px;
+  background: #f9c06a;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid #f9c06a;
+  font-weight: bolder;
+  cursor: pointer;
+  
+  display: block;
+  margin: 0 auto;
+}
+
