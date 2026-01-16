@@ -6,23 +6,24 @@
 }
 
 body {
-  background: url("./images/coffee_image.png") no-repeat center center/cover;
+ 
   min-height: 100vh;
+  font-family: "Playfair Display", serif;
 }
 
 /* Make all images responsive */
 img {
   max-width: 100%;
-  height: auto;
+  height:auto;
 }
 
 /* MAIN CONTAINER */
 .main {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 20px auto;
   padding: 0 20px;
   min-height: 100vh;
-  font-family: "Playfair Display", serif;
+  background: url("./images/coffee_image.png") no-repeat center center/cover;
 }
 
 /* TOP SECTION */
@@ -141,4 +142,128 @@ img {
   .bottom {
     font-size: 16px;
   }
+}
+/* 
+.discover{
+  background-color: white;
+}
+.discover-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+gap:50px
+}
+.discover-text{
+ 
+  width:50px;
+}
+.discover-text h2{
+  color: brown;
+
+}
+.discover-text p{
+  color:black;
+  width: 50px;
+}
+.discover-button{
+  background-color: yelow;
+  border-radius: 2px;
+}
+.discover-image{
+    max-width: 450px;
+} */
+
+.discover {
+  padding: 80px 100px;
+  background-color: #fff;
+}
+
+.discover-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.discover-text {
+  max-width: 500px;
+}
+
+.discover-text h2 {
+  font-size: 40px;
+  color: #603809; /* coffee brown */
+  margin-bottom: 20px;
+}
+
+.discover-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #707070;
+  margin-bottom: 30px;
+}
+.button{
+  padding: 13px 25px;
+  background: #f9c06a;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid #f9c06a;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.discover-image img {
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  .discover-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .discover-image img {
+    width: 100%;
+  }
+}
+
+
+.menu {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.menu-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.menu-text{
+  max-width: 800px;
+}
+.menu-text h1{
+  color:#603809;
+  font-size:50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+}
+.menu-text p{
+  color:black;
+  font-size: 17px;
+  line-height: 1.2;
+  margin-left: 70px;
+  
+}
+.menu-image{
+  max-width: 1400px;
+  margin-left: 150px;
+  align-items: center;
+
+  padding: 70px;
 }
