@@ -1,20 +1,18 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".navbar a");
+const orderButtons = document.querySelectorAll(".menu-card button");
 
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
+orderButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    alert("☕ Your coffee has been added to cart!");
   });
+});
+const subscribeBtn = document.querySelector(".subscribe-form button");
+const emailInput = document.querySelector(".subscribe-form input");
 
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
+subscribeBtn.addEventListener("click", () => {
+  if (emailInput.value === "") {
+    alert("Please enter your email 📧");
+  } else {
+    alert("Thanks for subscribing ☕");
+    emailInput.value = "";
+  }
 });
