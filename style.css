@@ -45,15 +45,30 @@ img {
   gap: 30px;
 }
 
+
 .navbar ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.navbar a.active {
+
+.navbar ul li a:hover {
   color: #f9c06a;
+}
+
+
+.navbar ul li a:visited {
+  color: #caa46a;   /* visited color */
+}
+
+
+.navbar ul li a.active {
+  color: #f9c06a;   /* active color */
   font-weight: bold;
 }
+
+
 
 /* LOGIN */
 .loginsignupBtn {
