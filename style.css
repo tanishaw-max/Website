@@ -215,14 +215,14 @@ img {
   transform: translateX(-50%);
 }
 
-/* WHY ARE WE DIFFERENT */
+
 .different {
   position: relative;
   padding: 80px 20px;
   background-color: #fff;
 }
 
-/* coffee blast image */
+
 .coffee-blast {
   position: absolute;
   top: 0;
@@ -249,14 +249,15 @@ img {
   margin-bottom: 40px;
 }
 
-/* FEATURE CARDS */
+
 .features {
   display: grid;
-  grid-template-columns: repeat(4, 220px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   justify-content: center;
   margin-bottom: 40px;
 }
+
 
 .feature-card {
   background: #fff7ec;
