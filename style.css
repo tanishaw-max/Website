@@ -1,4 +1,7 @@
-/* RESET & GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,27 +9,26 @@
 }
 
 body {
- 
   min-height: 100vh;
   font-family: "Playfair Display", serif;
 }
 
-/* Make all images responsive */
+/* Images */
 img {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
-/* MAIN CONTAINER */
+/* ================= MAIN ================= */
 .main {
   max-width: 1600px;
   margin: 20px auto;
   padding: 0 20px;
   min-height: 100vh;
-  background: url("./images/coffee_image.png") no-repeat center center/cover;
+  background: url("./images/coffee_image.png") no-repeat center/cover;
 }
 
-/* TOP SECTION */
+/* ================= TOP ================= */
 .top {
   display: flex;
   justify-content: space-between;
@@ -38,14 +40,19 @@ img {
   display: flex;
   list-style: none;
   gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
   color: white;
 }
 
-.navbar ul li {
-  cursor: pointer;
+.navbar a.active {
+  color: #f9c06a;
+  font-weight: bold;
 }
 
-/* LOGIN / SIGNUP */
+/* LOGIN */
 .loginsignupBtn {
   display: flex;
   align-items: center;
@@ -61,129 +68,46 @@ img {
   padding: 12px 20px;
   background: #f9c06a;
   border-radius: 20px;
-  border: 1px solid #f9c06a;
+  border: none;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* MIDDLE SECTION */
+/* ================= HERO ================= */
 .middle {
   color: white;
   margin-top: 80px;
   font-size: 25px;
 }
 
-.middle-top {
-  margin-top: 20px;
-}
-
-/* BOTTOM SECTION */
 .bottom {
   color: white;
   margin-top: 30px;
   font-size: 22px;
 }
 
-.bottom-top {
-  margin-top: 20px;
-}
-
 .bottom-top button {
   padding: 13px 25px;
   background: #f9c06a;
-  color: black;
   border-radius: 20px;
-  border: 1px solid #f9c06a;
-  font-weight: bolder;
+  border: none;
+  font-weight: bold;
   cursor: pointer;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-
-/* TABLET & MOBILE */
-@media (max-width: 768px) {
-  .top {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .loginsignupBtn {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .middle,
-  .bottom {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .bottom p br {
-    display: none;
-  }
-
-  .bottom-top {
-    text-align: center;
-  }
-}
-
-/* SMALL MOBILE */
-@media (max-width: 480px) {
-  .middle h4 {
-    font-size: 16px;
-  }
-
-  .bottom {
-    font-size: 16px;
-  }
-}
-/* 
-.discover{
-  background-color: white;
-}
-.discover-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-gap:50px
-}
-.discover-text{
- 
-  width:50px;
-}
-.discover-text h2{
-  color: brown;
-
-}
-.discover-text p{
-  color:black;
-  width: 50px;
-}
-.discover-button{
-  background-color: yelow;
-  border-radius: 2px;
-}
-.discover-image{
-    max-width: 450px;
-} */
-
+/* ================= DISCOVER ================= */
 .discover {
-  
-  padding: 50px 100px;
-  background-color: #fff;
+  padding: 60px 20px;
+  background: #fff;
 }
 
 .discover-container {
   display: flex;
+  gap: 50px;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .discover-text {
@@ -192,86 +116,57 @@ gap:50px
 
 .discover-text h2 {
   font-size: 40px;
-  color: #603809; /* coffee brown */
-  margin-bottom: 20px;
+  color: #603809;
 }
 
 .discover-text p {
-  font-size: 17px;
-  line-height: 1.6;
   color: #707070;
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
-.button{
+
+.button {
   padding: 13px 25px;
   background: #f9c06a;
-  color: black;
   border-radius: 20px;
-  border: 1px solid #f9c06a;
-  font-weight: bolder;
+  border: none;
+  font-weight: bold;
   cursor: pointer;
-}
-
-.discover-image img {
-  width: 450px;
-}
-
-@media (max-width: 768px) {
-  .discover-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .discover-image img {
-    width: 100%;
-  }
-}
-
-
-.menu {
-  padding: 60px 0;
-  background-color: #fff;
-}
-
-.menu-container {
-  max-width: 1400px;
+  display: block;
   margin: 0 auto;
-  padding: 0 300px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-} 
-
-.menu-text{
-  max-width: 800px;
 }
-.menu-text h1{
-  color:#603809;
-  font-size:50px;
-  line-height: 1.2;
-  margin-bottom: 20px;
 
+/* ================= MENU ================= */
+.menu {
+  padding: 60px 20px;
+  background: #fff;
 }
-.menu-text p{
-  color:#707070;
-  font-size: 17px;
-  line-height: 1.2;
-  margin-left: 70px;
-  
+
+.menu-text {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
 }
+
+.menu-text h1 {
+  color: #603809;
+  font-size: 45px;
+}
+
+.menu-text p {
+  color: #707070;
+  margin-top: 15px;
+}
+
 .menu-cards {
   display: grid;
-  grid-template-columns: repeat(4, 260px);
-  gap: 20px;
-  justify-content: center;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto 0;
 }
 
 .menu-card {
   background: #fff8f1;
-  border-radius: 0px;
   text-align: center;
   padding-bottom: 30px;
   position: relative;
@@ -279,22 +174,16 @@ gap:50px
 
 .menu-card img {
   width: 100%;
-  border-radius: 0;
 }
 
-.menu-card h3 {
+.menu-card h3,
+.menu-card h4 {
   color: #603809;
-  margin-top: 15px;
 }
 
 .menu-card p {
-  font-size: 14px;
   color: #707070;
-}
-
-.menu-card h4 {
-  color: #603809;
-  margin: 10px 0;
+  font-size: 14px;
 }
 
 .menu-card button {
@@ -302,157 +191,72 @@ gap:50px
   border: none;
   padding: 8px 22px;
   border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-
+  font-weight: bold;
   position: absolute;
-  bottom: -15px;      /* makes it float like image */
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-
-
-
+/* ================= FEATURES ================= */
 .different {
-  position: relative;   /* important */
-  background-color: #fff;
-  padding: 60px 0;
-}
-
-.coffee-blast {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 300px;     /* adjust if needed */
-  pointer-events: none; /* decorative only */
+  padding: 60px 20px;
+  background: #fff;
 }
 
 .different-text {
-  max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
-}
-.different-text h1 {
-  color: #603809;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.different-text > p {
-  color: #707070;
-  font-size: 17px;
-  margin-bottom: 30px;
-}
-
-
-
-
-
-.different-text h3{
-  color:#603809;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .features {
   display: grid;
-  grid-template-columns: repeat(4, 220px); /* fixed small width */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
-  min-height: 200px;
-  justify-content: center;
-  margin: 30px 0;
+  margin-top: 40px;
 }
-
 
 .feature-card {
-  padding: 25px 15px;
-  border-radius: 12px;
+  padding: 25px;
   text-align: center;
+  border-radius: 12px;
 }
-
 
 .feature-card img {
-  width: 60px;      /* small icon like image */
-  height: auto;
-  margin-bottom: 12px;
+  width: 60px;
 }
 
-
 .feature-card h3 {
-  font-size: 20px;
-  margin-bottom: 6px;
   color: #603809;
 }
 
 .feature-card p {
-  font-size: 17px;
-  line-height: 1.4;
   color: #707070;
+  font-size: 15px;
 }
 
-
-.button{
- padding: 13px 20px;
-  background: #f9c06a;
-  color: black;
-  border-radius: 20px;
-  border: 1px solid #f9c06a;
-  font-weight: bolder;
-  cursor: pointer;
-  
-  display: block;
-  margin: 0 auto;
-}
-
-/* SUBSCRIBE SECTION */
+/* ================= SUBSCRIBE ================= */
 .subscribe {
   position: relative;
   min-height: 350px;
-  background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url("./images/Rectangle 16.png") no-repeat center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   color: #fff;
-  padding: 60px 20px 120px; /* extra bottom for cups */
-}
-
-
-
-
-
-.subscribe-overlay {
-  max-width: 700px;
-  margin: auto;
-}
-
-.subscribe h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.subscribe p {
-  color: #ddd;
-  margin-bottom: 30px;
+  text-align: center;
+  padding: 60px 20px 120px;
 }
 
 .subscribe-form {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .subscribe-form input {
   padding: 14px;
-  width: 320px;
+  width: 300px;
   border: none;
-  outline: none;
 }
 
 .subscribe-form button {
@@ -460,97 +264,50 @@ gap:50px
   background: #f9c06a;
   border: none;
   font-weight: bold;
-  cursor: pointer;
 }
-
 
 /* Cups */
 .cup {
   position: absolute;
-  bottom: -90px;   /* overlap footer */
-  width: 200px;
-  z-index: 2;
+  bottom: -70px;
+  width: 150px;
 }
 
-.cup.left {
-  left: 0;
-}
+.cup.left { left: 0; }
+.cup.right { right: 0; }
 
-.cup.right {
-  right: 0;
-}
-
-
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 .footer {
-  position: relative;
-  background-color: #3b1f0f;
-
-  /* Coffee beans image */
-  background-image: url("./images/fotter_image.png  ");
-  background-repeat: repeat-x;
-  background-position: bottom center;
+  background: #3b1f0f url("./images/fotter_image.png") repeat-x bottom;
   background-size: contain;
-
-  padding: 80px 100px 120px; /* extra bottom space for beans */
+  padding: 60px 20px 120px;
 }
-
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
-}
-
-.footer-about h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.footer-about p {
-  font-size: 15px;
-  line-height: 1.6;
   color: #ccc;
 }
 
-.socials span {
-  margin-right: 10px;
-  cursor: pointer;
-}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.footer-links h4 {
-  margin-bottom: 15px;
-}
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-.footer-links ul {
-  list-style: none;
-}
-
-.footer-links ul li {
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: #ccc;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
+  .discover-container {
+    flex-direction: column;
     text-align: center;
   }
-}
 
-@media (max-width: 500px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
-
-  .subscribe-form {
-    flex-direction: column;
-  }
-
-  .subscribe-form input {
-    width: 100%;
+  .cup {
+    width: 100px;
   }
 }
